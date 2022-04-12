@@ -1,0 +1,301 @@
+git * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* NAVIGATION SECTION*/
+nav {
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.flex-container {
+    background: url(scraper.png) no-repeat;
+    display: flex;
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+h5  {
+    align-self: flex-start;
+    padding: 0px 0px 0px 50px;
+}
+
+
+@media (max-width:900px){
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h5 {
+        align-self: center;
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+
+.nav-links>div {
+    margin: 10px 10px 0px 0px;
+   
+}
+
+div> a {
+    text-decoration: none;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 4px;
+    margin: 10px 0px 0px 0px;
+}
+
+.active, a:hover {
+    background-color: red;
+}
+
+
+/* HOME SECTION*/
+.Home {
+    display: flex;
+    background-color: rgba(238, 0, 0, 0.7);
+    flex-direction: column;
+    font-size: 260%;
+    padding: 40px 20px 40px 20px;
+    margin: 150px 100px 5px 100px;
+    user-select: none;
+    align-self: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    }
+
+
+
+@media (max-width:900px){
+    .Home {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 120%;
+        align-content: center;
+        user-select: none;
+        align-self: center;
+        color: white;
+        line-height: 40px;
+    }
+    }
+
+button{
+    background-color: rgb(255, 255, 255);
+    color: red;
+    padding: 10px 20px;
+    border: 1px solid rgb(218, 3, 3);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    
+    }
+
+button:hover {
+        background-color: rgb(230, 162, 162);
+    }
+
+
+/*ABOUT SECTION*/
+
+.About {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.About-sub {
+    margin: 0px;
+    width: 25%;
+    height: 50%;
+    padding: 10px;
+    margin: 20px;
+    line-height: 25px;
+}
+
+.About-title h3 {
+    width: 150px;  
+    text-align: center;
+    background-color: red;
+    margin: auto;
+    padding: 10px; 
+}
+
+
+@media (max-width:900px){
+        .About {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+        .About-sub {
+            padding: 20px;
+            width: 100%;
+            height: 40%;
+            margin: 10px 10px 0px 10px;
+            text-align: center;
+        }
+    }
+   
+/*WHO SECTION*/
+    .Who {
+        display: flex;
+        flex-wrap: wrap;
+        background: url(team.jpg) top right no-repeat;
+        background-size: 65%;
+        align-items: stretch;
+        color: white;
+        
+    }
+        
+
+
+    .Who>div {
+        width: 40%;
+        height: 100%;
+        margin: 0;
+        padding: 25px 30px 0px 35px; 
+        background-color: black;
+    }
+
+    .who-body {
+        text-align: left;
+        line-height: 25px;
+        
+    }
+    
+@media (max-width:900px){
+    .Who {
+        display: flex;
+        flex-wrap: wrap;
+        background: none;
+        background-size: 0;
+        align-items: stretch;
+        color: white;
+        
+    }
+
+    .Who>div {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 40px; 
+        background-color: black;
+    }
+
+    .who-body {
+        text-align: left;
+        line-height: 25px;
+        
+    }
+    
+}
+
+@media (min-width:900px){
+    .team-pix {
+            display: none;
+        }
+    }
+
+/*SPONSOR SECTION*/
+
+    .Sponsors {
+        text-align: center;
+        margin: 30px;
+        word-spacing: 30px;
+    }
+
+    .Sponsors-title {
+        word-spacing: 0;
+    }
+
+/*CONTACT SECTION*/
+
+    .Contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: red;
+        
+    }
+
+    .Contact>div {
+        background-color: white;
+        margin: 50px;
+        padding: 40px;
+        text-align: left; 
+    }
+    
+    input, textarea {
+        width: 100%;
+        border: 1px solid BLACK;
+        margin-top: 4px;
+    }
+    
+    input {   
+        height: 20px;
+    }
+    
+    .form>p {
+        color: black;
+        font-weight: bold;
+    }
+
+    ::placeholder {
+        padding-left: 5px;
+    }
+
+    .send {
+
+        background-color: red;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        border: 1px solid rgb(218, 3, 3);
+        border-radius: 10px;
+        cursor: pointer;
+        width: 100px;
+    }
+
+    button:hover {
+        background-color: rgb(173, 2, 2);
+    }
+    
+/*FOOTER SECTION*/
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        background-color: black;
+        color: white;
+}
+
+        
+    
