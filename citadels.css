@@ -79,8 +79,8 @@ div> a {
     background-color: rgba(238, 0, 0, 0.7);
     flex-direction: column;
     font-size: 260%;
-    padding: 40px 20px 40px 20px;
-    margin: 150px 80px 5px 80px;
+    padding: 40px 30px 40px 30px;
+    margin: 150px 50px 5px 50px;
     user-select: none;
     align-self: center;
     justify-content: center;
@@ -116,7 +116,7 @@ button{
     
     }
 
-button:hover {
+.read:hover {
         background-color: rgb(230, 162, 162);
     }
 
